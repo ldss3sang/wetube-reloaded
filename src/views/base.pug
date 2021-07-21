@@ -8,13 +8,21 @@ html(lang="en")
         title #{pageTitle} | Wetube Reloaded
     body 
         header
+            h1=pageTitle
             nav
                 ul 
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="/videos/upload") Upload Video 
+                    li 
+                        a(href="/search") Search
+                    li 
+                        a(href="/join") Join
                     li 
                         a(href="/logout") Log out
                     li 
                         a(href="/login") Login
-            h1=pageTitle
         main
             block content    
     include partials/footer.pug
